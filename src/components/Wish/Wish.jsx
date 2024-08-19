@@ -110,7 +110,7 @@ export default function Wish() {
           </p>
         </div>
       )}
-      {wishDetails.length == 1 ? (
+      {wishDetails?.length == 1 ? (
         <div className="md:mb-72 md:h-2 lg:mb-0 lg:h-0"></div>
       ) : (
         ""
