@@ -58,9 +58,9 @@ export default function RecentProducts() {
   async function deleteFromWish(productId) {
     setCurrentProductId(productId);
     setWishLoading(true);
-    for (let i = 0; i < wishDetails.length; i++) {
+    for (let i = 0; i < wishDetails?.length; i++) {
       console.log(wishLoading);
-      if (wishDetails[i].id == productId) {
+      if (wishDetails[i]?.id == productId) {
         let response = await deleteProductWish(productId);
         setWishLoading(false);
         localStorage.removeItem(productId);
