@@ -46,7 +46,7 @@ export default function RecentProducts() {
   function check(productId) {
     //setWishLoading(true);
     console.log(wishLoading);
-    if (wishDetails.length < 1) {
+    if (wishDetails?.length < 1) {
       console.log("wish < 1");
       addToWish(productId);
     } else if (localStorage.getItem(productId)) {
